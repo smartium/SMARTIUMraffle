@@ -38,7 +38,7 @@ Template.body.events({
         counter ++
         drawn = Math.round((Math.random() * 1000) + 1)
         number.set(drawn)
-        if (counter == 3) {
+        if (counter == 300) {
           Meteor.clearInterval(myInterval);
           console.log(number.get());
           arrRaffles.push(number.get());
