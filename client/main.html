@@ -1,39 +1,24 @@
 <head>
-  <title>Sistema de Sorteio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMARTIUMraffle</title>
 </head>
 
 <body>
-  <!-- particles.js container -->
-<div id="particles-js"></div>
+  <div class="row">
+    <div class="col-md-12"><img class="img-responsive" src="img/natalia_header.png" id="header"></div>
+  </div>
+  <div class="row" id="stage">
+    <span class="number">{{number}}</span>
+  </div>
 
-<!-- stats - count particles -->
-<div class="count-particles">
-  <span class="js-count-particles">--</span> particles
-</div>
+  <div class="row" id="raffles">
+    {{raffles}}
+  </div>
 
-<!-- particles.js lib (JavaScript CodePen settings): https://github.com/VincentGarreau/particles.js -->
-  <!-- <div class="container">
-    <div class="sidebar">
-      <div class="logo">
-        <img src="images/logo1.jpg" alt="" />
-      </div>
-      <div class="scoreboard">
-      </div>
-      <div class="button-raffle">
-
-      </div>
+  <div class="row" id="footer">
+    <div class="col-md-12">
+      <button id="go" class="btn btn-default btn-lg {{isRunning}}" type="button">Sortear</button>
     </div>
-    <div class="stage">
-      {{#if isPlaying}}
-      <button id="go" style="display: {{isRunning}}">SORTEAR</button>
-      {{else}}
-      <button id="new">NOVO SORTEIO</button>
-      {{/if}}
-      <div class="number">
-        {{number}}
-      </div>
-      <h2>{{raffles}}</h2>
-    </div>
-  </div> -->
-
+  </div>
 </body>
