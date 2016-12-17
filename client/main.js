@@ -38,14 +38,14 @@ Template.body.events({
         counter ++
         drawn = Math.round((Math.random() * 1000) + 1)
         number.set(drawn)
-        if (counter == 300) {
+        if (counter == 150) {
           Meteor.clearInterval(myInterval);
           console.log(number.get());
           arrRaffles.push(number.get());
           raffles.set(arrRaffles);
           isRunning.set('');
         }
-      }, 10);
+      }, 40);
     }
   },
 
